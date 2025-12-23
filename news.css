@@ -333,6 +333,19 @@ nav {
   color: var(--muted-text);
   font-weight: 500;
 }
+.news-author-container a{
+  text-decoration: none;
+}
+
+.news-author-container a:hover h5{
+  text-decoration: none;
+  color: rgb(255, 0, 0);
+}
+
+.news-author-container a:active h5{
+  text-decoration: none;
+  color: blue;
+}
 
 /* Load More Button */
 .loadmore {
@@ -398,6 +411,10 @@ footer {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 25px;
+}
+
+.news_button{
+  float: right;
 }
 
 /* Media Queries */

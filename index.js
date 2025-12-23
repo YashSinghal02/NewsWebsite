@@ -52,13 +52,15 @@ async function News(pageToken = null) {
         <div class="news-description-container">
           <p class="news_description">${description}</p>
         </div>
+
         <div class="bottom-news-container">
           <div class="news-author-container">
-            <h5 class="news_author">${author}</h5>
+           <a href="${x.link}" target="_blank" rel="noopener noreferrer"> <h5 class="news_author">${author}</h5> </a>
           </div>
           <div class="news-date-container">
             <h5 class="news_date">${pubDate}</h5>
           </div>
+    
         </div>
       `;
       document.querySelector(".news-container").append(newsdiv);
