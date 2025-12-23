@@ -1,84 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Entertainment</title>
-    <link rel="stylesheet" href="news.css">
+    <link rel="stylesheet" href="news.css" />
     <!-- FontAwesome Link -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    
- <header>
- <nav>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>NewsSphere</h1>
+        </div>
 
-<div class="logo">
-  <h1>NewsSphere</h1>
-</div>
+        <ul class="nav-ul">
+          <li class="nav-li"><a class="nav-a" href="index.html">All</a></li>
+          <li class="nav-li">
+            <a class="nav-a" href="Entertainment.html">Entertainment</a>
+          </li>
+          <li class="nav-li"><a class="nav-a" href="Sports.html">Sports</a></li>
+          <li class="nav-li">
+            <a class="nav-a" href="Technology.html">Technology</a>
+          </li>
+          <li class="nav-li"><a class="nav-a" href="Health.html">Health</a></li>
+        </ul>
 
+        <!-- <button class="sign-up">Book a Table</button> -->
+        <div class="form-user">
+          <form onsubmit="UserSearch(event)">
+            <input type="text" id="user_input" placeholder="Search news...🔎" />
+            <!-- <button type="submit">Search</button> -->
+          </form>
+        </div>
 
+        <div class="bar">
+          <i onclick="Hambuger()" class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+      <div class="hambuger-hide">
+        <div onclick="Hambuger()" class="close-menu">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <ul class="ham-hide-nav-ul">
+          <li class="ham-hide-nav-li">
+            <a class="ham-hide-nav-a" href="index.html">All</a>
+          </li>
+          <li class="ham-hide-nav-li">
+            <a class="ham-hide-nav-a" href="Entertainment.html"
+              >Entertainment</a
+            >
+          </li>
+          <li class="ham-hide-nav-li">
+            <a class="ham-hide-nav-a" href="Sports.html">Sports</a>
+          </li>
+          <li class="ham-hide-nav-li">
+            <a class="ham-hide-nav-a" href="Technology.html">Technology</a>
+          </li>
+          <li class="ham-hide-nav-li">
+            <a class="ham-hide-nav-a" href="Health.html">Movies</a>
+          </li>
+          <!-- <button class="sign-up">Book a Table</button> -->
+        </ul>
+      </div>
+    </header>
 
-<ul class="nav-ul">
-    <li class="nav-li"><a class="nav-a" href="index.html">All</a></li>
-    <li class="nav-li"><a class="nav-a" href="Entertainment.html">Entertainment</a></li>
-    <li class="nav-li"><a class="nav-a" href="Sports.html">Sports</a></li>
-    <li class="nav-li"><a class="nav-a" href="Technology.html">Technology</a></li>
-    <li class="nav-li"><a class="nav-a" href="Health.html">Health</a></li>
-</ul>
+    <section>
+      <div class="backdrop" onclick="Hambuger()"></div>
+    </section>
 
-    <!-- <button class="sign-up">Book a Table</button> -->
-<div class="form-user">
-       <form onsubmit="UserSearch(event)">
-  <input type="text" id="user_input" placeholder="Search news...🔎" />
-  <!-- <button type="submit">Search</button> -->
-</form>
-</div>
+    <section class="hero-section">
+      <div class="news-container"></div>
+      <button class="loadmore" onclick="loadMoreNews()">Load More</button>
+    </section>
 
-<div class="bar">
-   <i onclick="Hambuger()" class="fa-solid fa-bars "></i>
-</div>
+    <script></script>
 
-    </nav>
-<div class="hambuger-hide">
-            <div  onclick="Hambuger()" class="close-menu"><i class="fa-solid fa-xmark "></i></div>
-    <ul class="ham-hide-nav-ul">
- <li class="ham-hide-nav-li"><a class="ham-hide-nav-a"  href="index.html">All</a></li>
-    <li class="ham-hide-nav-li"><a class="ham-hide-nav-a"  href="Entertainment.html">Entertainment</a></li>
-    <li class="ham-hide-nav-li"><a class="ham-hide-nav-a"  href="Sports.html">Sports</a></li>
-    <li class="ham-hide-nav-li"><a class="ham-hide-nav-a"  href="Technology.html">Technology</a></li>
-    <li class="ham-hide-nav-li"><a class="ham-hide-nav-a"  href="Health.html">Movies</a></li>
-   <!-- <button class="sign-up">Book a Table</button> -->
-
-
-    </ul>
-</div>
-
- </header>
-
- <section>
-    <div class="backdrop" onclick="Hambuger()"></div>
-
-
-
- </section>
-
- <section  class="hero-section">
-
-
-<div class="news-container">
-
-</div>
-   <button class="loadmore" onclick="loadMoreNews()">Load More</button>
- </section>
-
-
-
-<script>
-
-</script>
-
-<script src="Entertainment.js"></script>
-
-</body>
+    <script src="Entertainment.js"></script>
+  </body>
 </html>

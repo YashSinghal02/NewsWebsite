@@ -12,7 +12,7 @@ function Hambuger() {
 
 let nextPage = null; // Will store the next page token from API response
 let key = "pub_178cb129889f42cc84894b4ac15f1dcb"; // Move to backend for security
-let category = "sports";
+let category = "health";
 
 async function News(pageToken = null) {
   try {
